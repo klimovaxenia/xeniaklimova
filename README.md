@@ -17,5 +17,5 @@ A table
 
 No  |  Task
 ----|----------------
-1.  | Make a bloody site working
-2.  | Finish the arch project
+1   | Make a bloody site working
+2   | Finish the arch project
