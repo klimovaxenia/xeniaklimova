@@ -36,3 +36,7 @@ A Picture
 -----------
 
 ![direct link](https://media.architecturaldigest.com/photos/5716abe5d207ea4e41a3207b/master/w_1920%2Cc_limit/scottish-castles-01.jpg)
+
+
+![direct link](https://i.pinimg.com/originals/b9/0e/06/b90e06db8424c26d832ebc980d5fdaa7.jpg)
+
