@@ -42,3 +42,8 @@ A Picture
 
 ![direct link](https://i.pinimg.com/originals/b9/0e/06/b90e06db8424c26d832ebc980d5fdaa7.jpg)
 
+
+Local picture:
+
+
+![Axel towers](pics/axel_towers.jpg)
