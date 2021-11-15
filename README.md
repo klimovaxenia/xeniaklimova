@@ -12,7 +12,8 @@ Test from local
 xeniaklimova
 ==============
 
-Second edit
+Second edit.
+First edit.
 
 This is a test index page of a site.
 
