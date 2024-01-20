@@ -1,5 +1,6 @@
 # hello-git
 
+test2
 test
 my first git repository
 
