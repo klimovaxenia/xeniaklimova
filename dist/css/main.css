@@ -41,6 +41,7 @@ body {
   font-weight: normal;
   margin-top: 70px;
     font-size: 25px;
+  text-decoration: none;
 }
 .subtitle {
   color: #575757ff;
@@ -50,12 +51,14 @@ body {
   margin-top: 0px;
   border-bottom: 1px solid silver;
     font-size: 18px;
+  text-decoration: none;
 }
 .proj-title {
   display: block;
   padding-top: 5px;
   font-weight: normal;
   color: #575757ff;
+  text-decoration: none;
 }
 .title-photo {
   display: block;
@@ -103,7 +106,7 @@ body {
 }
 .bread-crumbs a {
   color: #575757ff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .title {
@@ -111,6 +114,7 @@ body {
   font-weight: normal;
   margin-top: 20px;
     font-size: 20;
+  text-decoration: none;
 }
 .subtitle {
   color: #575757ff;
@@ -120,6 +124,7 @@ body {
   margin-top: 10px;
     font-size: 18;
   border-bottom: 1px solid silver;
+  text-decoration: none;
 }
 .proj-title {
   display: block;
@@ -128,6 +133,7 @@ body {
   color: #575757ff;
   text-decoration: none;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 {
