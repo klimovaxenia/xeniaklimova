@@ -14,12 +14,28 @@ div {
     display: block;
     width: 380px;
     padding: 5px;
+    padding-top: 20px;
     margin: 5px;
     z-index: -2;
 }
 
+.progect {
+  padding-top: 20px;
+}
+
 .project img {
     cursor: pointer;
+}
+.subtitle-p {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid silver;
+    font-size: 18px;
+  text-decoration: none;
 }
 
 

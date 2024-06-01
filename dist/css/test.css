@@ -1,10 +1,14 @@
 
-
-
 body {
   background-color: #fffaf5ff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
+}
+p {
+ color: #424242ff;
+}
+.progect {
+  padding-top: 20px;
 }
 .header-conteiner {
   height: 40px;
@@ -35,7 +39,7 @@ body {
 }
 .bread-crumbs a {
   color: #575757ff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .title {
@@ -43,27 +47,42 @@ body {
   font-weight: normal;
   margin-top: 70px;
     font-size: 25px;
+  text-decoration: none;
+}
+.subtitle-p {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  /*border-bottom: 1px solid silver;*/
+  font-size: 18px;
+  text-decoration: none;
 }
 .subtitle {
   color: #575757ff;
   font-weight: normal;
   padding-bottom: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 0px;
   border-bottom: 1px solid silver;
-    font-size: 18px;
+  font-size: 18px;
+  text-decoration: none;
 }
 .proj-title {
   display: block;
   padding-top: 5px;
   font-weight: normal;
   color: #575757ff;
+  text-decoration: none;
 }
 .title-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 370px;
+  outline: silver solid 1px;
 }
 .proj-photo {
   display: block;
@@ -78,6 +97,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  outline: silver solid 1px;
 }
 .proj-photo {
   display: block;
@@ -105,7 +125,7 @@ body {
 }
 .bread-crumbs a {
   color: #575757ff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .title {
@@ -113,15 +133,18 @@ body {
   font-weight: normal;
   margin-top: 20px;
     font-size: 20;
+  text-decoration: none;
 }
 .subtitle {
   color: #575757ff;
   font-weight: normal;
   padding-bottom: 10px;
+  padding-top: 40px;
   margin-bottom: 20px;
   margin-top: 10px;
     font-size: 18;
   border-bottom: 1px solid silver;
+  text-decoration: none;
 }
 .proj-title {
   display: block;
@@ -130,6 +153,7 @@ body {
   color: #575757ff;
   text-decoration: none;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 {
