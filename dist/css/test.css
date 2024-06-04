@@ -54,8 +54,8 @@ p {
   font-weight: normal;
   padding-bottom: 10px;
   padding-top: 10px;
-  margin-bottom: 40px;
-  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-top: 8px;
   /*border-bottom: 1px solid silver;*/
   font-size: 18px;
   text-decoration: none;
@@ -83,6 +83,12 @@ p {
   margin-right: auto;
   width: 370px;
   outline: silver solid 1px;
+}
+.proj-photo-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
 }
 .proj-photo {
   display: block;

@@ -4,10 +4,11 @@ S3_ROOT_DIR="xeniaklimova-library/public/p800-img"
 
 #SRC_DIR="full-size-img/graphics"
 #TGT_DIR="p800-img/graphics"
-SRC_DIR="full-size-img/paintings-oils"
-TGT_DIR="p800-img/paintings-oils"
+SRC_DIR="full-size-img/prj-birtvisi"
+TGT_DIR="p800-img/prj-birtvisi"
 
-for file in $SRC_DIR/*.jpg; do
+#for file in $SRC_DIR/*.jpg; do
+for file in $SRC_DIR/*.png; do
     #echo ${file##*/}
     FULL_SRC_PATH="${SRC_DIR}/${file##*/}"
     FULL_TGT_PATH="${TGT_DIR}/p800-${file##*/}"
