@@ -91,6 +91,61 @@ pics = [
 ]
 
 
+
+pics2 = [
+    ['antinoy-102.jpg','Antinous, pencil, A3'],
+    ['apocsiomen-102.jpg','Apoxyomenos, pencil, A3'],
+    ['athina-102.jpg','Athina, pencil, A3'],
+    ['bird-eye-view-composition-102.jpg',"Visualization of an object from a bird's eye view, pencil A2"],
+    ['cesar-102.jpg','Ceasar, pencil, A3'],
+    ['coal-still-life-101.jpg','Still life, coal'],
+    ['coal-still-life-102.jpg','Still life, coal'],
+    ['composition-01-02.jpg','Composition, pencil, A3'],
+    ['composition-02-02.jpg','Composition, pencil, A3'],
+    ['composition-03-2.jpg','Composition, pencil, A3'],
+    ['composition-04-02.jpg','Composition, pencil, A3'],
+    ['diadumen-102.jpg','Diadumenos, pencil, A3'],
+    ['dorifor-102.jpg','Doryphoros, pencil, A3'],
+    ['laocoon-102.jpg','Laocoon, pencil, A3'],
+    ['man-with-cane-102.jpg','Man with stuff, pencil, A2'],
+    ['moscow-sketches-01-2.jpg','Moscow sketches'],
+    ['moscow-sketches-05.jpg','Moscow sketches'],
+    ['moscow-sketches-202.jpg','Moscow sketches'],
+    ['moscow-sketches-302.jpg','Moscow sketches'],
+    ['nikollo-102.jpg','Niccolò da Uzzan, pencil, A3'],
+    ['portret-02.jpg','Portrait, pencil, A2'],
+    ['scull-and-head-102.jpg','The Scull and The Head, pencil, A2'],
+    ['seneka-102.jpg','Seneca, pencil, A2'],
+    ['socratus-02.jpg','Socrates, pencil, A3'],
+    ['still-life-103.jpg','Still life'],
+    ['still-life-105.jpg','Still life'],
+    ['still-life-201.jpg','Still life'],
+    ['still-life-302.jpg','Still life'],
+    ['venera-002.jpg','Venus de Milo, pencil, A3'],
+    ['villa-vera-102.jpg','Villa Vera, pencil, A3'],
+]
+
+
+pics3 = [
+    ['coffee-pot-01.jpg','Coffee pot'],
+    ['daffodils-001.jpg','Daffodils'],
+    ['fruit-01.jpg',''],
+    ['kolomenskoe-01.jpg','Park Kolomenskoye, Moscow'],
+    ['leros-castello.jpg','Castello, Agia-Marina, Leros Island, Greece'],
+    ['leros-lakki.jpg','Lakki Bay, Leros Island, Greece'],
+    ['little-bread.jpg','Bread'],
+    ['matricarias-11.jpg','Daisies'],
+    ['matricarias-30.jpg','Daisies'],
+    ['oranges-pealed-03.jpg','Peeled Oranges'],
+    ['pears.jpg','Pears'],
+    ['roses-002.jpg','Roses'],
+    ['roses-003.jpg','Roses'],
+    ['tea-party.jpg','Tea Party'],
+]
+
+
+
+
 TEMPLATE = """
 <div class="progect">
                 <a href="{url1}">
@@ -107,12 +162,12 @@ TEMPLATE = """
 def main() :
     indx = -1
     
-    for x in pics:
+    for x in pics3:
         indx+=1
         
-        url1='https://s3.amazonaws.com/xeniaklimova-library/public/pictures/sketches/' + pics[indx][0]
-        url2='https://s3.amazonaws.com/xeniaklimova-library/public/p800-img/sketches/p800-' + pics[indx][0]
-        title=pics[indx][1]
+        url1='https://s3.amazonaws.com/xeniaklimova-library/public/pictures/paintings-watercolors/' + pics3[indx][0]
+        url2='https://s3.amazonaws.com/xeniaklimova-library/public/p800-img/paintings-watercolors/p800-' + pics3[indx][0]
+        title=pics3[indx][1]
     
         s = TEMPLATE.format(url1=url1, url2=url2, title=title)
         print(s)

@@ -87,7 +87,7 @@ Park Bridge
 
 To design a pedestrian park bridge with a span of 15 meters and a height difference of 5 meters. 
 The main requirement for this project was to create a design that conforms with the Building Code (SNIP).
-Each flight of stairs can't be longer that 15 steps, all steps must be of equal height, etc.
+Each flight of stairs can't be longer than 15 steps, all steps must be of equal height, etc.
 
 ### Vision ###
 
@@ -112,13 +112,13 @@ Central Park Ensemble in Tblisi, Georgia
 
 Create a park ensemble that includes:
 
-- A Pavilion with integrated cafe that can accomodate 200 people;
+- A Pavilion that can accomodate 200 people with integrated cafe;
 - An 'amphitheatre' - a place where people can gather in groups and watch presentations, performances etc.;
 - A space for children to play - more of creative sculpture installation type rather than a conventional playground.
 
 ### Location ###
 
-Tbilisi Central Park used to be a hippodrome. Currently the area is unused and unkempt.
+Tbilisi Central Park used to be a hippodrome. Currently the area is unkempt.
 People use it as a park and as a shortcut to the next district. The terrain is mostly flat and
 there is vast amount of groundwater underneath it.
 
