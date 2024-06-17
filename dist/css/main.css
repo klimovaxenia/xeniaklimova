@@ -1,4 +1,9 @@
-
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  word-wrap: break-word;
+}
 body {
   background-color: #fffaf5ff;
   font-family: Arial, Helvetica, sans-serif;
