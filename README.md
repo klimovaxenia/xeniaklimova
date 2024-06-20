@@ -51,3 +51,5 @@ Local picture:
 
 
 ![Axel towers](pics/axel_towers.jpg)
+
+Dummy test
