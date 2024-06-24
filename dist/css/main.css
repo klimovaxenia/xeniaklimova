@@ -16,6 +16,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
 }
+.big-table {
+  margin: 20px;
+}
 p, li {
  color: #424242ff;
 }
