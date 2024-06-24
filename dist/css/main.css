@@ -4,6 +4,10 @@ table, th, td {
   padding: 5px;
   word-wrap: break-word;
 }
+ul {
+  list-style-position: outside;
+  padding-left: 15px;
+}
 td {
   background-color: white;
 }
