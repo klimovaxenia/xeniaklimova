@@ -5,7 +5,7 @@ body {
   margin: 0px;
 }
 p, li {
- color: #424242ff;
+ color: #575757ff;
 }
 .progect {
   padding-top: 20px;
@@ -76,6 +76,7 @@ p, li {
   font-weight: normal;
   color: #575757ff;
   text-decoration: none;
+  width: 370px;
 }
 .title-photo {
   display: block;
@@ -178,6 +179,7 @@ p, li {
   text-decoration: none;
   margin-bottom: 20px;
   text-decoration: none;
+  width: auto;
 }
 
 {
