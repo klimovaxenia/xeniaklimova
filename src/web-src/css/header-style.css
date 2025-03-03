@@ -1,0 +1,110 @@
+
+.right {
+  float: right;
+  display: block;
+  background-color: white;
+  margin-top: 49px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+.main-menu-2 {
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  color: black;
+  z-index: 2;
+}
+.header-cont {
+  height: 49px;
+  position: sticky;
+  top:0px;
+  z-index: 2;
+  background-color: #fffaf5ff;
+}
+.logo {
+  display: inline-block;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .sm-blue ul {
+    position: absolute;
+    width: 12em;
+  }
+
+  .sm-blue li {
+    float: left;
+  }
+
+  .sm-blue.sm-rtl li {
+    float: right;
+  }
+
+  .sm-blue ul li, .sm-blue.sm-rtl ul li, .sm-blue.sm-vertical li {
+    float: none;
+  }
+
+  .sm-blue a {
+    white-space: nowrap;
+  }
+
+  .sm-blue ul a, .sm-blue.sm-vertical a {
+    white-space: normal;
+  }
+
+  .sm-blue .sm-nowrap > li > a, .sm-blue .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+
+
+.sm-blue ul, li, a {
+  background-color: transparent;
+  text-decoration: none;
+}
+.header-cont {
+  height: 49px;
+  position: sticky;
+  top:0px;
+  z-index: 2;
+  background-color: #fffaf5ff;
+}
+.main-menu-2 {
+  padding: 15px;
+  width: auto;
+  background-color: #fffaf5ff;
+  color: black;
+  z-index: 2;
+}
+.submenu-1 {
+  background-color: white;
+  padding: 10px;
+  z-index: 2;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+.submenu-2 {
+  background-color: white;
+  padding: 15px;
+  color: black;
+  z-index: 2;
+}
+.right {
+  float: right;
+  background-color: #fffaf5ff;
+  display: inline-block;
+  margin-right: 10em;
+  z-index: 2;
+  
+}
+.logo {
+  display: inline-block;
+  padding: 15px;
+}
+

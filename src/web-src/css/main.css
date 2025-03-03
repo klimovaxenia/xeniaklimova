@@ -1,0 +1,231 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  word-wrap: break-word;
+}
+ul {
+  list-style-position: outside;
+  padding-left: 15px;
+}
+td {
+  background-color: white;
+}
+body {
+  background-color: #fffaf5ff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.big-table {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+p, li {
+ color: #424242ff;
+}
+.progect {
+  padding-top: 20px;
+}
+.header-conteiner {
+  height: 40px;
+  position: relative;
+  top: 0px;
+}
+.page-container {
+  background-color: #fffaf5ff;
+  z-index: 2;
+  width: 800px;
+  position: relative;
+  margin-bottom: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.text-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.bread-crumbs {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.bread-crumbs a {
+  color: #575757ff;
+  text-decoration: underline;
+}
+
+.title {
+  color: #424242ff;
+  font-weight: normal;
+  margin-top: 70px;
+    font-size: 25px;
+  text-decoration: none;
+}
+.subtitle-p {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  /*border-bottom: 1px solid silver;*/
+  font-size: 18px;
+  text-decoration: none;
+}
+.subtitle {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  border-bottom: 1px solid silver;
+  font-size: 18px;
+  text-decoration: none;
+}
+.proj-title-p {
+  display: block;
+  padding-top: 5px;
+  margin: 3px;
+  font-weight: normal;
+  color: #575757ff;
+  text-decoration: none;
+  width: 370px;
+}
+.proj-title {
+  display: block;
+  padding-top: 5px;
+  font-weight: normal;
+  color: #575757ff;
+  text-decoration: none;
+  width: 370px;
+}
+.title-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
+  outline: silver solid 1px;
+}
+.proj-photo-very-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+.proj-photo-medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+.proj-photo-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+.proj-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+@media (max-width: 480px) {
+
+.title-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  outline: silver solid 1px;
+}
+.proj-photo-very-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.proj-photo-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.proj-photo-medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.proj-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.page-container {
+  width: 85%;
+  position: relative;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.bread-crumbs {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.bread-crumbs a {
+  color: #575757ff;
+  text-decoration: underline;
+}
+
+.title {
+  color: #424242ff;
+  font-weight: normal;
+  margin-top: 20px;
+    font-size: 20;
+  text-decoration: none;
+}
+.subtitle {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+    font-size: 18;
+  border-bottom: 1px solid silver;
+  text-decoration: none;
+}
+.proj-title {
+  display: block;
+  padding-top: 5px;
+  font-weight: normal;
+  color: #575757ff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: auto;
+}
+
+.proj-title-p {
+  display: block;
+  padding-top: 5px;
+  margin: 3px;
+  font-size: smaller;
+  font-weight: normal;
+  color: #575757ff;
+  text-decoration: none;
+}
+{
