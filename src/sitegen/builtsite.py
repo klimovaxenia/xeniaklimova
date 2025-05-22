@@ -16,7 +16,7 @@ def list_files_recursive(path, file_list):
 
 def main():
     src_directory_path = '../web-src'
-    target_dir_path = '../../dist-2'
+    target_dir_path = '../../dist'
     src_file_list = []
     list_files_recursive(src_directory_path, src_file_list)
     #print(src_file_list)

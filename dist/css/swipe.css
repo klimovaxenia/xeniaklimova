@@ -1,0 +1,206 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --n: 400px;
+}
+
+.slider-container-wrapper {
+  height: auto;
+  width: 800px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  height: auto;
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
+
+.slide{
+  max-height: 100%;
+  width: 800px; /* Important, slide should be view width*/
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.myslide {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    align-items: center;
+}
+
+.myslide-img {
+    height: 417;
+    width: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%/*280px*/;
+  width: auto;
+  margin-top: -36px;
+  padding: 16px;
+  /*color: #004455fe;
+  color: #ffff;*/
+  color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(255,255,255,0.7);*/
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
+}
+
+/* The dots/bullets/indicators */
+.bullets {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171 !important;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@media (max-width: 795px) {
+
+.slider-container-wrapper {
+  height: 135px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.slider-container {
+  height: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
+
+.slide{
+    max-height: 100%;
+    width: 85vw; /* Important, slide should be view width*/
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.myslide {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.myslide-img {
+    height: 100%;
+    max-width: 85vw;
+    object-fit: contain;
+    }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% + 10px);
+  width: auto;
+  margin-top: -36px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(255,255,255,0.7);*/
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
+}
+.bullets {
+  padding-top: 5px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+}

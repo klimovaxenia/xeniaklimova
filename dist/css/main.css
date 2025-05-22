@@ -36,7 +36,7 @@ p, li {
   z-index: 2;
   width: 800px;
   position: relative;
-  margin-bottom: 350px;
+  margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   
@@ -56,6 +56,15 @@ p, li {
 .bread-crumbs a {
   color: #575757ff;
   text-decoration: underline;
+}
+.site-title {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px; 
+    color: #575757ff; 
+    width: auto;
+    text-align: left; 
+    margin-top: 20px;
 }
 
 .title {
@@ -102,6 +111,7 @@ p, li {
   color: #575757ff;
   text-decoration: none;
   width: 370px;
+  margin: 0px;
 }
 .title-photo {
   display: block;
@@ -134,13 +144,41 @@ p, li {
   margin-right: auto;
   width: 800px;
 }
+.social-media-wrapper {
+    width: 400;
+    height: auto;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-img {
+    display: block;
+    position: relative;
+    height: 55px;
+}
 @media (max-width: 480px) {
 
+.projects-cont {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+.progect {
+    padding-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .title-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
   outline: silver solid 1px;
 }
 .proj-photo-very-small {
@@ -162,10 +200,11 @@ p, li {
   width: 100%;
 }
 .proj-photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 110px;
+    outline: silver solid 1px;
 }
 .page-container {
   width: 85%;
@@ -190,6 +229,13 @@ p, li {
   text-decoration: underline;
 }
 
+.site-title {
+    font-size: 35px; 
+    color: #575757ff; 
+    width: auto;
+    text-align: left; 
+    margin-top: 20px;
+}
 .title {
   color: #424242ff;
   font-weight: normal;
@@ -209,14 +255,14 @@ p, li {
   text-decoration: none;
 }
 .proj-title {
-  display: block;
-  padding-top: 5px;
-  font-weight: normal;
-  color: #575757ff;
-  text-decoration: none;
-  margin-bottom: 20px;
-  text-decoration: none;
-  width: auto;
+    display: block;
+    padding-top: 5px;
+    font-weight: normal;
+    color: #575757ff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: 110px;
 }
 
 .proj-title-p {
@@ -227,5 +273,18 @@ p, li {
   font-weight: normal;
   color: #575757ff;
   text-decoration: none;
+}
+.social-media-wrapper {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-img {
+    display: block;
+    position: relative;
+    height: 35px;
 }
 {
