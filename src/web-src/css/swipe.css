@@ -1,0 +1,231 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --n: 400px;
+}
+
+.main-container {
+  height: 400px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  height: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
+
+.slide{
+  max-height: 100%;
+  width: 100vw; /* Important, slide should be view width*/
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+}
+.slide-box {
+  background-color: #c8e1e8ff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-box {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-text {
+  padding-left: 80px;
+  font-size: 35px;
+  color: #004455fe;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slide-link {
+  padding-top: 20px;
+}
+.slide-link a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #004455fe;
+  /*padding-top: 20px;*/
+  padding-right: 8px;
+}
+.slide-link::after {
+  content: ' ';
+  border: solid #004455fe;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.image-box {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-box img {
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%/*280px*/;
+  width: auto;
+  margin-top: -36px;
+  padding: 16px;
+  /*color: #004455fe;*/
+  color: #ffff;
+  /*background-color: rgba(255,255,255,0.7);*/
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
+}
+
+/* The dots/bullets/indicators */
+.bullets {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 22px;
+  width: 22px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171 !important;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@media (max-width: 795px) {
+
+.main-container {
+  height: 270px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.slide-text {
+  padding-left: 40px;
+  font-size: 20px;
+  color: #004455fe;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slide-link {
+  padding-top: 15px;
+}
+.slide-link a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #004455fe;
+  /*padding-top: 15px;*/
+  padding-right: 8px;
+}
+.slide-link::after {
+  content: ' ';
+  border: solid #004455fe;
+  border-width: 0 3px 3px 0;
+  padding: 4px;
+  margin-bottom: 2px;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -36px;
+  padding: 10px;
+  color: #ffff;
+  /*background-color: rgba(255,255,255,0.7);*/
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+}

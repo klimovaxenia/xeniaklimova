@@ -1,0 +1,130 @@
+div {
+    box-sizing: border-box;
+}
+.projects-cont {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;  
+    margin: 5px;
+    z-index: -2;
+}
+.project {
+    display: block;
+    width: 380px;
+    padding: 5px;
+    padding-top: 20px;
+    margin: 5px;
+    z-index: -2;
+}
+
+.progect {
+  padding-top: 20px;
+}
+
+.project img {
+    cursor: pointer;
+}
+/*.subtitle-p {
+  color: #575757ff;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid silver;
+    font-size: 18px;
+  text-decoration: none;
+}*/
+
+
+
+/*.wrapper {
+  margin: 2em auto;
+  max-width: 970px;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.masonry {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: -8px;
+   Adjustment for the gutter 
+  counter-reset: brick;
+  width: 100%;
+}
+
+.masonry-brick {
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 0 8px 8px;
+   Some Gutter 
+  background-color: #eee;
+  position: relative;
+}
+
+.masonry-brick:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  color: white;
+  transform: translate(-50%, -50%);
+  counter-increment: brick;
+  content: counter(brick);
+  transition: font-size .25s, opacity .25s ease-in-out;
+  font-weight: 700;
+  opacity: .5;
+  font-size: 1.25em;
+}
+
+.masonry-brick:hover:after {
+  font-size: 2.25em;
+  opacity: 1;
+}
+
+.masonry-brick-caption {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.masonry-preloader {
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: .5;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+   Vertical masonry bricks on desktop-sized screen 
+  .masonry-brick {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+   Vertical masonry bricks on tablet-sized screen 
+  .masonry-brick {
+    width: 50%;
+  }
+}
+
+.masonry-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}*/

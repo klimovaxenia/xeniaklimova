@@ -133,7 +133,7 @@ a.sm-red-a2:hover {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 .sm-submenu a {
-  background-color: white;
+  background-color: #fffaf5ff;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   /*font-size: 16px;*/
