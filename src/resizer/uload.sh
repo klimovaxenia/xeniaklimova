@@ -14,8 +14,8 @@ S3_ROOT_DIR_370="xeniaklimova-library/public/p370-img"
 #aws s3 cp ./p370-img/paintings-oils "s3://${S3_ROOT_DIR}/paintings-oils/"  --recursive
 
 #aws s3 cp ./p800-img/prj-lobster "s3://${S3_ROOT_DIR_800}/prj-urban/"  --recursive
-aws s3 cp ./p1200-img/prj-likani "s3://${S3_ROOT_DIR_1200}/prj-likani/"  --recursive
-aws s3 cp ./p370-img/prj-likani "s3://${S3_ROOT_DIR_370}/prj-likani/"  --recursive
+aws s3 cp ./p1200-img/prj-interior-97m-apartment "s3://${S3_ROOT_DIR_1200}/prj-interior-97m-apartment/"  --recursive
+aws s3 cp ./p370-img/prj-interior-97m-apartment "s3://${S3_ROOT_DIR_370}/prj-interior-97m-apartment/"  --recursive
 #aws s3 cp ./full-size-img/prj-gothia/gothia-view-from-water-2.png "s3://${S3_ROOT_DIR}/prj-gothia/" 
 #aws s3 cp ./full-size-img/prj-gothia/gothia-view-from-water-3.png "s3://${S3_ROOT_DIR}/prj-gothia/" 
 #aws s3 cp ./p1200-img/paintings-oils/p1200-crabs.png "s3://${S3_ROOT_DIR_1200}/paintings-oils/"
