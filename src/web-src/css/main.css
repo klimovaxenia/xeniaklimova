@@ -23,6 +23,10 @@ body {
 p, li {
  color: #424242ff;
 }
+
+p {
+  padding-bottom: 15px;
+}
 .progect {
   padding-top: 20px;
 }

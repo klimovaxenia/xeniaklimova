@@ -162,83 +162,83 @@ function getPositionX(event) {
   return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
 }
 
-function touchStart(index) {
-  return function (event) {
-    console.log("touchStart1");
-    console.log(event.target.closest(".slide"));
-    console.log("my target");
-    
-    // Setting all the elements
-    slider = event.target.closest(".slider-container");//slider-container
-    sliderWrapper = event.target.closest(".slider-container-wrapper");//slider-container-wrapper
-    console.log(slider);
-    swiper = slider.closest(".swiper");//swiper
-    slides = slider.getElementsByClassName("slide");//slide
-    dots = sliderWrapper.parentElement.getElementsByClassName("bullets")[0].getElementsByClassName("dot");
-    prevButton = sliderWrapper.getElementsByClassName("prev")[0];
-    nextButton = sliderWrapper.getElementsByClassName("next")[0];
-    
-    // Setting currentIndex
-    if (event.target.className === "slide") {
-        mycurrentIndex = Number(event.target.getAttribute("index"));
-    } else {
-        mycurrentIndex = Number(event.target.closest(".slide").getAttribute("index"));
-    }
-
-    startPos = getPositionX(event);
-    isDragging = true;
-    animationID = requestAnimationFrame(animation);
-    slider.classList.add('grabbing');
-  }
-}
-
-function touchMove(event) {
-  if (isDragging) {
-    const currentPosition = getPositionX(event)
-    currentTranslate = prevTranslate + currentPosition - startPos
-  }
-}
-
-function touchEnd() {
-    for (i = 0; i < touchDots.length; i++) {
-        touchDots[i].className = touchDots[i].className.replace(" active", "");
-    }
-  cancelAnimationFrame(animationID)
-  isDragging = false
-  const movedBy = currentTranslate - prevTranslate
-
-    // if moved enough negative then snap to next slide if there is one
-    if (movedBy < -100 && mycurrentIndex < slides.length - 1) {
-        mycurrentIndex += 1;
-    }
-
-    // if moved enough positive then snap to previous slide if there is one
-    if (movedBy > 100 && mycurrentIndex > 0) {
-        mycurrentIndex -= 1;
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-   
-    console.log("Array: " + dots[i]);
-
-    setPositionByIndex()
-    
-    touchDots[mycurrentIndex].className += " active";
-    hideArrow();
-
-    console.log(slider);
-    slider.classList.remove('grabbing')
-    
-    slider = null;
-    sliderWrapper = null;
-    swiper = null;
-    slides = null;
-    dots = null;
-    prevButton = null;
-    nextButton = null;
-    myicurrentIndex = 0;
-}
+//function touchStart(index) {
+//  return function (event) {
+//    console.log("touchStart1");
+//    console.log(event.target.closest(".slide"));
+//    console.log("my target");
+//    
+//    // Setting all the elements
+//    slider = event.target.closest(".slider-container");//slider-container
+//    sliderWrapper = event.target.closest(".slider-container-wrapper");//slider-container-wrapper
+//    console.log(slider);
+//    swiper = slider.closest(".swiper");//swiper
+//    slides = slider.getElementsByClassName("slide");//slide
+//    dots = sliderWrapper.parentElement.getElementsByClassName("bullets")[0].getElementsByClassName("dot");
+//    prevButton = sliderWrapper.getElementsByClassName("prev")[0];
+//    nextButton = sliderWrapper.getElementsByClassName("next")[0];
+//    
+//    // Setting currentIndex
+//    if (event.target.className === "slide") {
+//        mycurrentIndex = Number(event.target.getAttribute("index"));
+//    } else {
+//        mycurrentIndex = Number(event.target.closest(".slide").getAttribute("index"));
+//    }
+//
+//    startPos = getPositionX(event);
+//    isDragging = true;
+//    animationID = requestAnimationFrame(animation);
+//    slider.classList.add('grabbing');
+//  }
+//}
+//
+//function touchMove(event) {
+//  if (isDragging) {
+//    const currentPosition = getPositionX(event)
+//    currentTranslate = prevTranslate + currentPosition - startPos
+//  }
+//}
+//
+//function touchEnd() {
+//    for (i = 0; i < touchDots.length; i++) {
+//        touchDots[i].className = touchDots[i].className.replace(" active", "");
+//    }
+//  cancelAnimationFrame(animationID)
+//  isDragging = false
+//  const movedBy = currentTranslate - prevTranslate
+//
+//    // if moved enough negative then snap to next slide if there is one
+//    if (movedBy < -100 && mycurrentIndex < slides.length - 1) {
+//        mycurrentIndex += 1;
+//    }
+//
+//    // if moved enough positive then snap to previous slide if there is one
+//    if (movedBy > 100 && mycurrentIndex > 0) {
+//        mycurrentIndex -= 1;
+//    }
+//    for (i = 0; i < dots.length; i++) {
+//        dots[i].className = dots[i].className.replace(" active", "");
+//    }
+//   
+//    console.log("Array: " + dots[i]);
+//
+//    setPositionByIndex()
+//    
+//    touchDots[mycurrentIndex].className += " active";
+//    hideArrow();
+//
+//    console.log(slider);
+//    slider.classList.remove('grabbing')
+//    
+//    slider = null;
+//    sliderWrapper = null;
+//    swiper = null;
+//    slides = null;
+//    dots = null;
+//    prevButton = null;
+//    nextButton = null;
+//    myicurrentIndex = 0;
+//}
 
 function setPositionByIndex() {
     let curTranslt = swiper.getAttribute("currentindex") * -sliderWrapper.offsetWidth;
